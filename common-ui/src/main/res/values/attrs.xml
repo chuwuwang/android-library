@@ -15,4 +15,11 @@
         <attr name="progress_background_color" format="color" />
     </declare-styleable>
 
+    <declare-styleable name="GradientTextView">
+        <attr name="gradient_text" format="string" />
+        <attr name="gradient_text_size" format="dimension" />
+        <attr name="gradient_up_color" format="color" />
+        <attr name="gradient_below_color" format="color" />
+    </declare-styleable>
+
 </resources>

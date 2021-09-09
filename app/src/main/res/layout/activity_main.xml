@@ -19,6 +19,11 @@
 
     </RelativeLayout>
 
+    <com.sea.library.common.ui.widget.GradientTextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:gradient_text="@string/app_name" />
+
     <com.sea.library.common.ui.widget.EditTextVerificationCode
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
