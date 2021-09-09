@@ -1,4 +1,4 @@
-package com.sea.library.common.widget
+package com.sea.library.common.ui.widget
 
 import android.content.Context
 import android.graphics.Canvas
@@ -13,7 +13,7 @@ import android.util.AttributeSet
 import android.util.Log
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.ContextCompat
-import com.sea.library.common.R
+import com.sea.library.common.ui.R
 
 class EditTextVerificationCode @JvmOverloads constructor(
     context: Context,

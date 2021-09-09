@@ -1,4 +1,4 @@
-package com.sea.library.common.widget.animation
+package com.sea.library.common.ui.widget.animation
 
 import android.animation.Animator
 import android.animation.ValueAnimator
@@ -11,7 +11,7 @@ import android.util.AttributeSet
 import android.view.animation.LinearInterpolator
 import androidx.annotation.FloatRange
 import androidx.core.content.ContextCompat
-import com.sea.library.common.R
+import com.sea.library.common.ui.R
 import kotlin.math.min
 import kotlin.properties.Delegates.observable
 

@@ -1,4 +1,4 @@
-package com.sea.library.common.widget.animation
+package com.sea.library.common.ui.widget.animation
 
 import android.animation.Animator
 import android.content.Context
