@@ -1,4 +1,4 @@
-package com.sea.library.common.live.data
+package com.sea.library.common.lifecycle
 
 sealed class RequestState<out T> {
 

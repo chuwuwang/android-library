@@ -1,8 +1,7 @@
-package com.sea.library.common.extension
+package com.sea.library.common.lifecycle
 
 import androidx.annotation.MainThread
 import androidx.lifecycle.*
-import com.sea.library.common.live.data.Event
 
 typealias EventMutableLiveData<T> = MutableLiveData< Event<T> >
 
@@ -23,7 +22,7 @@ fun <T> EventMutableLiveData<T>.setEventValue(value: T) {
  */
 @MainThread
 inline fun <T> EventLiveData<T>.observeSingleEvent(owner: LifecycleOwner, viewModelStore: ViewModelStore, crossinline onChanged: (T) -> Unit): Observer< Event<T> > {
-    val wrappedObserver = Observer<Event<T>> { t ->
+    val wrappedObserver = Observer< Event<T> > { t ->
         val value = t.getContentIfNotHandled(viewModelStore)
         if (value != null) {
             onChanged.invoke(value)
