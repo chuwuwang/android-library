@@ -46,6 +46,8 @@ dependencies {
     implementation "com.google.android.material:material:$versions.material_version"
 
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle_version"
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.kotlinx_coroutines_core_version"
