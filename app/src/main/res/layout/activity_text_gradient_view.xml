@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sea.library.common.ui.widget.edit.GradientTextView
+        android:id="@+id/gradient_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:gradient_text="Android自定义View实战" />
+
+    <com.sea.library.common.ui.widget.edit.GradientTextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+       app:gradient_text_size="20sp"
+        app:gradient_text="Android 自定义View 抗锯齿" />
+
+    <com.sea.library.common.ui.widget.edit.GradientTextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+        app:gradient_text="Android抗锯齿的几个方法" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

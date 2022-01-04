@@ -1,4 +1,4 @@
-package com.sea.library.common.ui.widget.animation
+package com.sea.library.common.ui.widget.progress
 
 import android.animation.Animator
 import android.content.Context

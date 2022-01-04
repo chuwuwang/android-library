@@ -1,4 +1,4 @@
-package com.sea.library.common.ui.widget
+package com.sea.library.common.ui.widget.edit
 
 import android.content.Context
 import android.graphics.Canvas
@@ -40,7 +40,7 @@ class EditTextVerificationCode @JvmOverloads constructor(
     private var itemCursorVisible = true
     private var itemCursorDrawable: Drawable ? = null
 
-    private var blink: Blink ? = null
+    private var blink: Blink? = null
 
     private val typedArray = context.obtainStyledAttributes(attrs, R.styleable.EditTextVerificationCode, defStyleAttr, 0)
 

@@ -1,4 +1,4 @@
-package com.sea.library.common.ui.widget
+package com.sea.library.common.ui.widget.edit
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -38,11 +38,13 @@ class GradientTextView @JvmOverloads constructor(
             textSize = typedArray.getDimension(R.styleable.GradientTextView_gradient_text_size, 28f).toInt()
             upColor = typedArray.getColor(R.styleable.GradientTextView_gradient_up_color, Color.BLACK)
             belowColor = typedArray.getColor(R.styleable.GradientTextView_gradient_below_color, Color.RED)
-
             paint.textSize = textSize.toFloat()
         } finally {
             typedArray.recycle()
         }
+        isEnabled = false
+        isClickable = true
+        isFocusable = false
     }
 
     fun setSlidingMode(mode: Int) {

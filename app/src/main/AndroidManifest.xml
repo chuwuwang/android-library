@@ -19,6 +19,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.sea.android.ui.edit.EditActivity" />
+        <activity android:name="com.sea.android.ui.edit.VerificationCodeActivity" />
+
+        <activity android:name="com.sea.android.ui.text.TextActivity" />
+        <activity android:name="com.sea.android.ui.edit.GradientTextViewActivity" />
+
+        <activity android:name="com.sea.android.ui.progress.ProgressActivity" />
+        <activity android:name="com.sea.android.ui.progress.ProgressViewActivity" />
+
     </application>
 
 </manifest>
