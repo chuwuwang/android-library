@@ -219,7 +219,7 @@ class EditTextVerificationCode @JvmOverloads constructor(
         if (action != null) {
             action.cancel()
         } else {
-            //
+            Log.d(TAG, "blink is null")
         }
     }
 

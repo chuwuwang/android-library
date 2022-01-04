@@ -1,5 +1,6 @@
 package com.sea.library.common.ui.widget
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
@@ -9,6 +10,7 @@ import android.view.MotionEvent
 import androidx.appcompat.widget.AppCompatEditText
 import com.sea.library.common.ui.R
 
+@Suppress("unused", "MemberVisibilityCanBePrivate")
 class GradientTextView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet ? = null,
@@ -123,6 +125,7 @@ class GradientTextView @JvmOverloads constructor(
         canvas.drawLine(0f, height / 2.toFloat(), width.toFloat(), height / 2.toFloat(), paint)
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(event: MotionEvent ? ): Boolean {
         if (event != null) {
             when (event.action) {
