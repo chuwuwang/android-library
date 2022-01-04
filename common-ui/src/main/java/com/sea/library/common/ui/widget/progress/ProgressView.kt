@@ -81,7 +81,7 @@ class ProgressView @JvmOverloads constructor(
 
         val progressOffset = progressPadding + progressPaint.strokeWidth / 2f
 
-        // 由于笔画在线的中心，我们需要为它留出一半的安全空间，否则它将被截断的界限
+        // 由于笔画在线的中心, 我们需要为它留出一半的安全空间, 否则它将被截断的界限
         backgroundRadius = min(horizontalHalf, verticalHalf) - strokePaint.strokeWidth / 2f
 
         val progressRectMinSize = 2 * (min(horizontalHalf, verticalHalf) - progressOffset)

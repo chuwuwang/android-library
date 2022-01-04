@@ -28,6 +28,9 @@
         <activity android:name="com.sea.android.ui.progress.ProgressActivity" />
         <activity android:name="com.sea.android.ui.progress.ProgressViewActivity" />
 
+        <activity android:name=".ui.indicator.IndicatorActivity" />
+        <activity android:name=".ui.indicator.CircleStickIndicatorActivity" />
+
     </application>
 
 </manifest>
