@@ -2,6 +2,12 @@ package com.sea.library.common.lifecycle
 
 import androidx.lifecycle.ViewModelStore
 
+/**
+ * Event Class is used as a wrapper for data that is exposed via a LiveData that represents an event.
+ * Using this Event class, multiple observers can observe an event.
+ *
+ * Use this EventObserver to remove some boilerplate code if you end up having lots of events.
+ */
 @Suppress("MemberVisibilityCanBePrivate")
 open class Event<out T>(private val data: T) {
 
