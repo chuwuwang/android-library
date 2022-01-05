@@ -2,6 +2,7 @@ package com.sea.library.common.lifecycle
 
 import androidx.lifecycle.ViewModelStore
 
+@Suppress("MemberVisibilityCanBePrivate")
 open class Event<out T>(private val data: T) {
 
     var hasBeenHandled = false

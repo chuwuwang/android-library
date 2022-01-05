@@ -48,7 +48,7 @@ inline fun <T> EventLiveData<T>.observeSingleEvent(owner: LifecycleOwner, crossi
 }
 
 /**
- * 不考虑粘性问题, 和 UI 数据一样, 每次都通知观察者
+ * 不考虑粘性问题, 和UI数据一样, 每次都通知观察者
  */
 @MainThread
 inline fun <T> EventLiveData<T>.observeEvent(owner: LifecycleOwner, crossinline onChanged: (T) -> Unit): Observer< Event<T> > {
