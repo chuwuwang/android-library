@@ -13,12 +13,22 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    signingConfigs {
+        ktx {
+            keyAlias "sea"
+            keyPassword "sea_ktx"
+            storePassword "sea_ktx"
+            storeFile file('../app/ktx.keystore')
+        }
+    }
     buildTypes {
         debug {
             minifyEnabled false
+            signingConfig signingConfigs.ktx
         }
         release {
             minifyEnabled false
+            signingConfig signingConfigs.ktx
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -41,10 +51,12 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.4.0'
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.30"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.10"
 
     // implementation "com.android.tools.build:gradle:4.1.3"
 
     implementation project(":common")
     implementation project(":common-ui")
+
+    implementation project(":ucrop")
 }
