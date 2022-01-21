@@ -2,3 +2,5 @@ include ':app'
 
 include ':common'
 include ':common-ui'
+
+include ':ucrop'

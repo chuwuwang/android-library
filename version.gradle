@@ -5,8 +5,8 @@ build_versions.compile_sdk_version = 31
 ext.build_versions = build_versions
 
 def versions = [:]
-versions.kotlin_version = "1.5.31"
-versions.build_gradle_version = '7.0.3'
+versions.kotlin_version = "1.6.10"
+versions.build_gradle_version = '7.0.4'
 
 versions.core_ktx_version = "1.7.0"
 
