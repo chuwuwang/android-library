@@ -58,6 +58,8 @@ dependencies {
     implementation project(":common")
     implementation project(":common-ui")
 
+    implementation project(":hook")
+
     implementation project(":ucrop")
 
     implementation 'com.guolindev.permissionx:permissionx:1.6.1'
