@@ -93,14 +93,14 @@ public class AspectRatioTextView extends AppCompatTextView {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        if (isSelected()) {
-            canvas.getClipBounds(mCanvasClipBounds);
-
-            float x = (mCanvasClipBounds.right - mCanvasClipBounds.left) / 2.0f;
-            float y = (mCanvasClipBounds.bottom - mCanvasClipBounds.top / 2f) - mDotSize * MARGIN_MULTIPLIER;
-
-            canvas.drawCircle(x, y, mDotSize / 2f, mDotPaint);
-        }
+//        if (isSelected()) {
+//            canvas.getClipBounds(mCanvasClipBounds);
+//
+//            float x = (mCanvasClipBounds.right - mCanvasClipBounds.left) / 2.0f;
+//            float y = (mCanvasClipBounds.bottom - mCanvasClipBounds.top / 2f) - mDotSize * MARGIN_MULTIPLIER;
+//
+//            canvas.drawCircle(x, y, mDotSize / 2f, mDotPaint);
+//        }
     }
 
     @SuppressWarnings("deprecation")
@@ -127,6 +127,8 @@ public class AspectRatioTextView extends AppCompatTextView {
         applyActiveColor(activeColor);
 
         a.recycle();
+
+        setGravity(Gravity.CENTER_VERTICAL);
     }
 
     private void applyActiveColor(@ColorInt int activeColor) {
