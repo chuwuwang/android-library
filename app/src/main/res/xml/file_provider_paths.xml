@@ -3,4 +3,6 @@
 
     <external-path name="Pictures" path="."/>
 
+    <root-path name="camera_photos" path="" />
+
 </paths>

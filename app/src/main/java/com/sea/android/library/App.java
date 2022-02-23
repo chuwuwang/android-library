@@ -12,7 +12,8 @@ import com.sea.library.common.logger.Logger;
 
 public class App extends Application {
 
-    private static final String TAG = "App";
+    public static final String TAG = "App";
+    public static final String FILE_AUTHORITIES = BuildConfig.APPLICATION_ID +  ".provider";
 
     @Override
     public void onCreate() {

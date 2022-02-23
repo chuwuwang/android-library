@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 30
+        versionCode 315
+        versionName "3.1.5"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.libraryVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "gallery-" + defaultConfig.versionName + "_" + buildType.name + ".aar"
+        }
+    }
+    resourcePrefix 'gallery_'
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "androidx.appcompat:appcompat:$versions.appcompat_version"
+    implementation "com.google.android.material:material:$versions.material_version"
+    implementation "androidx.constraintlayout:constraintlayout:$versions.constraintlayout_version"
+
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+}
