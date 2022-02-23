@@ -31,8 +31,6 @@ class LibraryActivity : AppCompatActivity() {
         EasyPhotos.createAlbum(this, true, false, imageEngine)
             .setFileProviderAuthority(App.FILE_AUTHORITIES)
             .setCount(9)
-            .setPuzzleMenu(false)
-            .setCleanMenu(false)
             .start(100)
     }
 

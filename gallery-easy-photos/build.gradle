@@ -24,7 +24,6 @@ android {
             outputFileName = "gallery-" + defaultConfig.versionName + "_" + buildType.name + ".aar"
         }
     }
-    resourcePrefix 'gallery_'
     lintOptions {
         abortOnError false
     }

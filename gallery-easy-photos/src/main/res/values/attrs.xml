@@ -16,4 +16,5 @@
         <attr name="animation_duration" format="integer" />
         <attr name="radian" format="float" />
     </declare-styleable>
+
 </resources>
