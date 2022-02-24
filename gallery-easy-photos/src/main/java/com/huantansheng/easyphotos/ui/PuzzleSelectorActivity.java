@@ -44,6 +44,8 @@ public class PuzzleSelectorActivity extends AppCompatActivity implements View.On
         activity.startActivityForResult(intent, Code.REQUEST_PUZZLE_SELECTOR);
     }
 
+    private static final String DIRECTORY = "RicaApp";
+
     private AlbumModel albumModel;
 
     private AnimatorSet setShow;
@@ -149,7 +151,7 @@ public class PuzzleSelectorActivity extends AppCompatActivity implements View.On
         } else if (R.id.root_view_album_items == id) {
             showAlbumItems(false);
         } else if (R.id.tv_done == id) {
-            PuzzleActivity.startWithPhotos(this, selectedPhotos, Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + getString(R.string.app_name), "IMG", Code.REQUEST_PUZZLE, false, Setting.imageEngine);
+            PuzzleActivity.startWithPhotos(this, selectedPhotos, Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + DIRECTORY, "IMG", Code.REQUEST_PUZZLE, false, Setting.imageEngine);
 
         }
     }

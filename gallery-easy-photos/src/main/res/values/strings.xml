@@ -1,7 +1,5 @@
 <resources>
 
-    <string name="app_name">EasyPhotos</string>
-
     <string name="selector_folder_all_easy_photos">All Pictures</string>
 
     <string name="selector_folder_all_video_photo_easy_photos">Pictures and Videos</string>
