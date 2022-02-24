@@ -3,3 +3,4 @@
 local.properties
 *.bin
 buildSrc/build/
+gradle-plugin-mao/build/

@@ -7,3 +7,7 @@ include ':hook'
 
 include ':ucrop'
 include ':gallery-easy-photos'
+
+include ':gradle-plugin-mao'
+// 本地使用时可以这样测试
+// includeBuild('gradle-plugin-mao')
