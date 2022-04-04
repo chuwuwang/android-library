@@ -1,4 +1,4 @@
-package com.sea.library.common.media.store
+package com.sea.library.common.helper
 
 import android.content.*
 import android.net.Uri

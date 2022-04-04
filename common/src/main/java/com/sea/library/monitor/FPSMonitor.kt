@@ -17,8 +17,9 @@ object FPSMonitor {
 
     private val listeners = arrayListOf<(Int) -> Unit>()
 
+    @Suppress("SimplifyBooleanWithConstants")
     fun start(listener: (Int) -> Unit) {
-        if ( ! openFps ) {
+        if (openFps == false) {
             openFps = true
             listeners.add(listener)
             mainHandler.postDelayed(fpsRunnable, FPS_INTERVAL_TIME)
