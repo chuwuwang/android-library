@@ -3,7 +3,5 @@ include ':app'
 include ':common'
 include ':common-ui'
 
-include ':hook'
-
 include ':ucrop'
 include ':gallery-easy-photos'
