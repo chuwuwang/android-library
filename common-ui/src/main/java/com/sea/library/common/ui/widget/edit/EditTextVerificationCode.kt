@@ -40,7 +40,7 @@ class EditTextVerificationCode @JvmOverloads constructor(
     private var itemCursorVisible = true
     private var itemCursorDrawable: Drawable ? = null
 
-    private var blink: Blink? = null
+    private var blink: Blink ? = null
 
     private val typedArray = context.obtainStyledAttributes(attrs, R.styleable.EditTextVerificationCode, defStyleAttr, 0)
 
@@ -98,7 +98,7 @@ class EditTextVerificationCode @JvmOverloads constructor(
         setMeasuredDimension(measuredWidth, measuredHeight)
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas ? ) {
         if (canvas != null) {
             drawBackground(canvas)
             drawText(canvas)
@@ -127,7 +127,7 @@ class EditTextVerificationCode @JvmOverloads constructor(
         }
     }
 
-    override fun onFocusChanged(focused: Boolean, direction: Int, previouslyFocusedRect: Rect?) {
+    override fun onFocusChanged(focused: Boolean, direction: Int, previouslyFocusedRect: Rect ? ) {
         super.onFocusChanged(focused, direction, previouslyFocusedRect)
         Log.e(TAG, "onFocusChanged: $focused")
         if (focused) {
@@ -135,7 +135,7 @@ class EditTextVerificationCode @JvmOverloads constructor(
         }
     }
 
-    override fun onTextChanged(text: CharSequence?, start: Int, lengthBefore: Int, lengthAfter: Int) {
+    override fun onTextChanged(text: CharSequence ?, start: Int, lengthBefore: Int, lengthAfter: Int) {
         super.onTextChanged(text, start, lengthBefore, lengthAfter)
         if (text != null) {
             if (text.length >= size) {
